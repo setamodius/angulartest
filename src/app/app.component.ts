@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Device } from './device'
+import { AppTopmenuComponent } from './app-topmenu/app-topmenu.component';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  device1: Device = new Device("sdsd","mmmom");
+    
   title = 'app';
 }
