@@ -9,6 +9,14 @@ import { AppTopmenuComponent } from './app-topmenu/app-topmenu.component';
 })
 export class AppComponent {
   device1: Device = new Device("sdsd","mmmom");
+  isCollapsed:boolean = true;
+  constructor() { 
     
+  }
   title = 'app';
+
+  menuToggle()
+  {
+    this.isCollapsed = !this.isCollapsed;
+  }
 }

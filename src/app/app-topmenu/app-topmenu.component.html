@@ -1,5 +1,23 @@
-<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
-  <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
-
-  <span class="w3-bar-item w3-right"></span>
-</div>
+<nav class="navbar navbar-inverse navbar-static-top navbarmargin">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Savronik Scada</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Devices</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Settings <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Server Settings</a></li>
+          <li><a href="#">Device Settings</a></li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Login<span class="glyphicon glyphicon-log-in"></span></a>
+        <ul class="dropdown-menu">
+          <li><my-usermenu></my-usermenu></li>
+        </ul>
+    </ul>
+  </div>
+</nav>

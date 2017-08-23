@@ -1,27 +1,43 @@
-<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
-  <my-topmenu></my-topmenu>
-</div>
 
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:200px;" id="mySidebar"><br>
-  <div class="w3-container w3-row">
-    <my-usermenu></my-usermenu>
-    <my-loginmodal></my-loginmodal>
-  </div>
-</nav>
+<div><my-topmenu></my-topmenu></div>
 
+<div class="wrapper">
+  
+  <nav id="sidebar" [class.active]="isCollapsed">
+    <!-- Sidebar Header -->
+    <div class="sidebar-header" (click)="menuToggle()">
+                  <h4>Systems</h4>
+                  <strong>S</strong>
+              </div>
 
+    <!-- Sidebar Links -->
+   
+    <ul class="list-unstyled components">
+      <li class="active">
+        <a href="#"><i class="glyphicon glyphicon-flash"></i><span>Low Voltage</span></a>
+      </li>
+      <li>
+        <a href="#"><i class="fa fa-car"></i><span>Traffic</span></a>
+      </li>
+      <li>
+        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"><i class="glyphicon glyphicon-duplicate"></i><span>Pages</span></a>
+        <ul class="collapse list-unstyled" id="pageSubmenu">
+          <li><a href="#">Page 1</a></li>
+          <li><a href="#">Page 2</a></li>
+          <li><a href="#">Page 3</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#"><i class="glyphicon glyphicon-link"></i><span>Portfolio</span></a>
+      </li>
+      <li>
+        <a href="#"><i class="glyphicon glyphicon-send"></i><span>Contact</span></a>
+      </li>
+    </ul>
+  </nav>
 
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:300px;margin-top:43px;">
+  <div id="content">
+    
+    <div>
 
-  <!-- Header -->
-  <header class="w3-container" style="padding-top:22px">
-    <h5><b><i class="fa fa-dashboard"></i> SIMS Dashboard </b></h5>
-  </header>
-
-  <div class="w3-row-padding w3-margin-bottom">
-    Page
-  </div>
-  <!-- End page content -->
-</div>
+    </div>

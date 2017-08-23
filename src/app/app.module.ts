@@ -7,12 +7,15 @@ import { AppUsermenuComponent } from './app-usermenu/app-usermenu.component';
 import { AppLoginmodalComponent } from './app-loginmodal/app-loginmodal.component';
 import { AppUserloginService } from "./app-userlogin.service";
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
     AppTopmenuComponent,
     AppUsermenuComponent,
-    AppLoginmodalComponent
+    AppLoginmodalComponent,
+    
   ],
   imports: [
     BrowserModule
